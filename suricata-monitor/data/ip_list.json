@@ -1,0 +1,28 @@
+{
+  "dns_events": [
+    {"src_ip": "172.20.10.8", "rrname": "google.com", "count": 45},
+    {"src_ip": "8.8.8.8", "rrname": "dns.google", "count": 30},
+    {"src_ip": "77.88.8.8", "rrname": "yandex.ru", "count": 20},
+    {"src_ip": "8.8.8.100", "rrname": "malware.example", "count": 5},
+    {"src_ip": "1.1.1.50", "rrname": "suspicious.example", "count": 3},
+    {"src_ip": "1.1.1.5", "rrname": "low-risk.example", "count": 1},
+    {"src_ip": "1.1.1.1", "rrname": "cloudflare.com", "count": 12},
+    {"src_ip": "10.0.0.5", "rrname": "mysite.com", "count": 15}
+  ],
+  "vt_responses": {
+    "8.8.8.100": {"malicious": true, "risk_level": "КРИТИЧЕСКИЙ", "malicious_count": 10, "suspicious_count": 2},
+    "1.1.1.50": {"malicious": true, "risk_level": "ВЫСОКИЙ", "malicious_count": 3, "suspicious_count": 1},
+    "1.1.1.5": {"malicious": false, "risk_level": "НИЗКИЙ", "malicious_count": 1, "suspicious_count": 0},
+    "1.1.1.1": {"malicious": false, "risk_level": "ЧИСТЫЙ", "malicious_count": 0, "suspicious_count": 0},
+    "8.8.8.8": {"malicious": false, "risk_level": "ЧИСТЫЙ", "malicious_count": 0, "suspicious_count": 0},
+    "77.88.8.8": {"malicious": false, "risk_level": "ЧИСТЫЙ", "malicious_count": 0, "suspicious_count": 0},
+    "172.20.10.8": {"malicious": false, "risk_level": "ЧИСТЫЙ", "malicious_count": 0, "suspicious_count": 0},
+    "10.0.0.5": {"malicious": true, "risk_level": "ВЫСОКИЙ", "malicious_count": 5, "suspicious_count": 2}
+  },
+  "default_vt_response": {
+    "malicious": false,
+    "risk_level": "ЧИСТЫЙ",
+    "malicious_count": 0,
+    "suspicious_count": 0
+  }
+}
